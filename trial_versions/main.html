@@ -7,12 +7,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6dc31973cf.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <section class="header">
         <nav>
             <a href="index.html"><img src=images/logo.png></a>
-            <div class="nav-links">
+            <div class="nav-links" id="navlinks">
+                <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>       
                 <ul>
                     <li><a href="">HOME</a></li>
                     <li><a href="">ABOUT</a></li>
@@ -20,7 +22,25 @@
                     <li><a href="">CONTACT</a></li>
                 </ul>
             </div>
+            <i class="fa-solid fa-bars" onclick="openMenu()"></i>
         </nav>
+
+        <div class="textbox">
+            <h1>Hello There 👋</h1>
+            <p>Making a website can be really easy, all you need to know is HTML, CSS <br>and Javascript and you are ready to go :D</p>
+            <a href="" class="h_btn" >Click Me!</a>
+        </div>
+        
     </section>
+    <!------JavaScript Start ------>
+    <script>
+        var navlinks = document.getElementById("navlinks");
+        function openMenu(){
+            navlinks.style.right="0";
+        }
+        function closeMenu(){
+            navlinks.style.right="-300px";
+        }
+    </script>
 </body>
 </html> 
