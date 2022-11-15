@@ -1,0 +1,248 @@
+:root {
+    --color-primary: #0073ff;
+    --color-white: #e9e9e9;
+    --color-black: #141d28;
+    --color-black-1: #212b38;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body{
+    font-family: sans-serif;
+
+  }
+  .header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/Raigad_Fort.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+ }
+
+      .logo {
+        color: wheat;
+        font-size: 30px;
+      }
+
+      .logo span {
+        color: var(--color-primary);
+      }
+
+      .menu-bar {
+        background-color: rgba(12, 4, 38, 0.701);
+        height: 80px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 5%;
+
+        position: relative;
+      }
+
+      .menu-bar ul {
+        list-style: none;
+        display: flex;
+      }
+
+      .menu-bar ul li {
+        /* width: 120px; */
+        padding: 10px 30px;
+        /* text-align: center; */
+
+        position: relative;
+      }
+
+      .menu-bar ul li a {
+        font-size: 20px;
+        color: var(--color-white);
+        text-decoration: none;
+
+        transition: all 0.3s;
+      }
+
+      .menu-bar ul li a:hover {
+        color: var(--color-primary);
+      }
+
+      .fas {
+        float: right;
+        margin-left: 10px;
+        padding-top: 3px;
+      }
+
+      /* dropdown menu style */
+      .dropdown-menu {
+        display: none;
+      }
+
+      .menu-bar ul li:hover .dropdown-menu {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        background-color: rgba(12, 4, 38, 0.701);
+      }
+
+      .menu-bar ul li:hover .dropdown-menu ul {
+        display: block;
+        margin: 10px;
+      }
+
+      .menu-bar ul li:hover .dropdown-menu ul li {
+        width: 150px;
+        padding: 10px;
+      }
+
+      .dropdown-menu-1 {
+        display: none;
+      }
+      .dropdown-menu-2{
+        display: none;
+      }
+      .dropdown-menu-3{
+        display: none;
+      }
+
+      .dropdown-menu ul li:hover .dropdown-menu-1 {
+        display: block;
+        position: absolute;
+        left: 150px;
+        top: 0;
+        background-color: rgba(12, 4, 38, 0.701);
+      }
+       .dropdown-menu ul li:hover .dropdown-menu-2 {
+        display: block;
+        position: absolute;
+        left: 150px;
+        top: 0;
+        background-color: rgba(12, 4, 38, 0.701);
+      }
+      .dropdown-menu ul li:hover .dropdown-menu-3 {
+        display: block;
+        position: absolute;
+        left: 150px;
+        top: 0;
+        background-color: rgba(12, 4, 38, 0.701);
+      }
+      .header{
+        min-height: 100vh;
+        width: 100%;
+        background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/Raigad_Fort.jpg);
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        font-family: 'ubuntu', sans-serif;
+        
+     }
+     .textbox{
+        width: 90%;
+        color: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+    
+    }
+    .textbox h1{
+        font-size: 62px;
+        font-weight: 600;
+    }
+    .textbox p{
+        margin: 10px 0 40px;
+        font-size: 18px; 
+        color: #fff;
+        font-weight: 400;
+    }
+    .h_btn{
+        display: inline-block;
+        text-decoration: none;
+        color: rgb(180, 191, 243);
+        border:1px solid;
+        padding: 12px 34px;
+        font-size: 13px;
+        background: transparent;
+        position: relative;
+        cursor: pointer;
+        transition: 0.8s;
+        border-radius: 6px;
+    }
+    .h_btn:hover{
+        border: 2px red;
+        background-color: floralwhite;
+        color: rgb(0, 136, 255);
+    }
+
+
+    /*        FORTS         */
+    .fort{
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        padding-top: 100px;
+    }
+    h1{
+        font-size: 36px;
+        font-weight: 600;
+    
+    }
+    p{
+        color: #202020;
+        font-size:14px ;
+        font-weight: 300;
+        line-height: 22px;
+        padding: 10px;
+    
+    }
+    .row{
+        margin-top: 5%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .course_col{
+        flex-basis: 31%;
+        background: #f9d7af;
+        border-radius: 10px;
+        margin-bottom: 5%;
+        padding: 20px 12px;
+        box-sizing: border-box;
+        transition: 0.4s ;
+    }
+    .course_col img{
+        width: 350px;
+        height: 250px;
+        position: relative;
+        background-size: cover;
+    }
+    h3{
+        text-align: center;
+        font-weight: 600;
+        margin: 10px 0;
+    
+    }
+    .course_col:hover{
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.231);
+    }
+    .btn{
+      margin: 0 0px;
+      text-decoration:none;
+      text-transform: uppercase;
+      background-color: white;
+      border-radius: 4px;
+      color: black;
+      padding: 10px 20px;
+      display: inline-block;
+      letter-spacing: 2px;
+      transition: 0.3s;
+  }
+  .btn:hover{
+      background-color: #000000ce;
+      color: #ffb969;
+  }
+  

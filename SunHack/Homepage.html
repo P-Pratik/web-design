@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name ="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Website Design - Trial</title>   
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6dc31973cf.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="header">
+    <div class="menu-bar">
+        <h1 class="logo">Maharashtra<span>Culture</span></h1>
+        <ul>
+          <li><a href="Homepage.html">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="Homepage.html">Heritage Sites<i class="fas fa-caret-down"></i></a>
+  
+              <div class="dropdown-menu">
+                  <ul>
+                    <li><a href="cultural.html">Cultural Heritage<i class="fas fa-caret-right"></i></a>
+                      <div class="dropdown-menu-1">
+                          <ul>
+                            <li><a href="fort.html">Forts</a></li>
+                            <li><a href="#">Caves</a></li>
+                            <li><a href="#">Historical</a></li>
+                          </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">Natural Heritage<i class="fas fa-caret-right"></i></a>
+                      <div class="dropdown-menu-2">
+                          <ul>
+                            <li><a href="#">Bird Century</a></li>
+                            <li><a href="#">Wildlife Century</a></li>
+                            <li><a href="#">Water Bodies</a></li>
+                          </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">Mixed Heritage<i class="fas fa-caret-right"></i></a>
+                        <div class="dropdown-menu-3">
+                          <ul>
+                            <li><a href="#">Manmade</a></li>
+                            <li><a href="#">Buildings</a></li>
+                          </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">FAQ</a></li>
+                  </ul>
+                </div>
+          </li>
+          <li><a href="fullmap.html">Map</a></li>
+          <li><a href="#">Contact us</a></li>
+          <li><form>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" name="" id="search-item" placeholder="Search">
+          </form></li>
+        </ul>
+      </div>
+  
+
+    <div class="textbox">
+        <h1>Maharashtra Culture</h1>
+        <p>This website will take you all on a journey of all of Maharashtra's Culture <br> Click below to begin your journey</p>
+        <a href="#journey_start" class="h_btn" >Click Me!</a>
+    </div>
+    </section>
+
+    <!------------------Monuments---------------------->
+
+    
+    <section class="mon_back">
+        <div class="monument">
+            <h1 id="journey_start">Heritage and Monuments</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt quod in aut cumque, cupiditate ad enim dolore corrupti saepe, magni facere veritatis voluptas est non ipsum aliquid temporibus inventore voluptates!</p>
+        </div>
+        <!----Cultural Heritage--->
+        <div class="row">
+        <section class="her1">
+            <div class="c_heritage">
+                <div class="container" id="parentl1">
+                    <div class="left1" ></div>
+                    <div class="right">
+                        <div class="content" id="Cul_hert">
+                            <h2>Cultural Heritage</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum officiis sit accusantium? Quam sed corrupti, omnis eveniet sint aliquam rem minima, blanditiis ducimus deserunt quis repellat? Ex officia quos iste?
+                            </p>
+                            <a href="cultural.html" class="btn">Don't click me</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="her2">
+            <div class="c_heritage">
+                <div class="container">
+                    <div class="left2"></div>
+                    <div class="right">
+                        <div class="content">
+                            <h2>Natural Heritage</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum officiis sit accusantium? Quam sed corrupti, omnis eveniet sint aliquam rem minima, blanditiis ducimus deserunt quis repellat? Ex officia quos iste?
+                            </p>
+                            <a href="#" class="btn">Don't click me</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="her3">
+            <div class="c_heritage">
+                <div class="container">
+                    <div class="left3"></div>
+                    <div class="right">
+                        <div class="content">
+                            <h2>Mixed Heritage</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum officiis sit accusantium? Quam sed corrupti, omnis eveniet sint aliquam rem minima, blanditiis ducimus deserunt quis repellat? Ex officia quos iste?
+                            </p>
+                            <a href="#" class="btn">Don't click me</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+<!----------    
+
+        Natural Heritage
+        
+            <div class="n_heritage">
+                <div class="container">
+                    <div class="left">
+                        <div class="content">
+                            <h2>Natural Heritage</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum officiis sit accusantium? Quam sed corrupti, omnis eveniet sint aliquam rem minima, blanditiis ducimus deserunt quis repellat? Ex officia quos iste?
+                            </p>
+                            <a href="#" class="btn">Don't click me</a>
+                        </div>
+                        <div class="right"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+                --->
+
+
+    <!------JavaScript Start ------>
+    <script>
+        var navherits = document.getElementById("navherits");
+        function openMenu(){
+            navherits.style.right="0";
+        }
+        function closeMenu(){
+            navherits.style.right="-500px";
+        }
+    </script>
+</body>
+</html> 

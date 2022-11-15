@@ -1,0 +1,385 @@
+:root {
+    --color-primary: #0073ff;
+    --color-white: #e9e9e9;
+    --color-black: #141d28;
+    --color-black-1: #212b38;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/Raigad_Fort.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+ }
+  body {
+    font-family: sans-serif;
+   
+  }
+  
+  .logo {
+    color: wheat;
+    font-size: 30px;
+  }
+  
+  .logo span {
+    color: var(--color-primary);
+  }
+  
+  .menu-bar {
+    background-color: rgba(12, 4, 38, 0.701);
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    position: relative;
+  }
+  
+  .menu-bar ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  .menu-bar ul li {
+    /* width: 120px; */
+    padding: 10px 30px;
+    /* text-align: center; */
+  
+    position: relative;
+  }
+  
+  .menu-bar ul li a {
+    font-size: 20px;
+    color: var(--color-white);
+    text-decoration: none;
+  
+    transition: all 0.3s;
+  }
+  
+  .menu-bar ul li a:hover {
+    color: var(--color-primary);
+  }
+  
+  .fas {
+    float: right;
+    margin-left: 10px;
+    padding-top: 3px;
+  }
+  
+  /* dropdown menu style */
+  .dropdown-menu {
+    display: none;
+  }
+  
+  .menu-bar ul li:hover .dropdown-menu {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: rgba(12, 4, 38, 0.701);
+  }
+  
+  .menu-bar ul li:hover .dropdown-menu ul {
+    display: block;
+    margin: 10px;
+  }
+  
+  .menu-bar ul li:hover .dropdown-menu ul li {
+    width: 150px;
+    padding: 10px;
+  }
+  
+  .dropdown-menu-1 {
+    display: none;
+  }
+  .dropdown-menu-2{
+    display: none;
+  }
+  .dropdown-menu-3{
+    display: none;
+  }
+
+  .dropdown-menu ul li:hover .dropdown-menu-1 {
+    display: block;
+    position: absolute;
+    left: 150px;
+    top: 0;
+    background-color: rgba(12, 4, 38, 0.701);
+  }
+   .dropdown-menu ul li:hover .dropdown-menu-2 {
+    display: block;
+    position: absolute;
+    left: 150px;
+    top: 0;
+    background-color: rgba(12, 4, 38, 0.701);
+  }
+  .dropdown-menu ul li:hover .dropdown-menu-3 {
+    display: block;
+    position: absolute;
+    left: 150px;
+    top: 0;
+    background-color: rgba(12, 4, 38, 0.701);
+  }
+
+
+
+.textbox{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+
+}
+.textbox h1{
+    font-size: 62px;   
+}
+.textbox p{
+    margin: 10px 0 40px;
+    font-size: 14px; 
+    color: #fff;
+}
+.h_btn{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(180, 191, 243);
+    border:1px solid;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    transition: 0.8s;
+    border-radius: 6px;
+}
+.h_btn:hover{
+    border: 2px red;
+    background-color: floralwhite;
+    color: rgb(0, 136, 255);
+}
+
+
+/*                Monuments   heading          */
+
+.mon_back{
+    background: linear-gradient(rgba(0, 255, 0, 0.265), rgba(144, 238, 144, 0.064) , rgba(144, 238, 144, 0));
+    background-size: cover;
+    width: 100%;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+.monument{
+    
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+h1{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 800;
+    margin: 10px 0 ;
+}
+
+p{
+    color: #202020;
+    font-size:18px ;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+    text-align: center;
+}
+
+
+
+
+/* Common stuff*/
+
+h2{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.row{
+    margin-top: 5%;
+    
+}
+
+/*   Cultural Heritage    */
+.c_heritage{
+    margin-top: 5%;
+}
+.c_heritage .container{
+    padding-right: 100px;
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+}
+.c_heritage .right{
+    width: 90%;
+    max-height: 400px;
+    min-height: 200px;
+    background-color: #f9d7af;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    border-radius: 8px;
+    color:#000000;
+    margin-left: -100px;
+}
+.c_heritage .left1{
+    width: 50%;
+    height: 600px;
+    background-image: url(images/forest3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+    transition: 0.5s;
+}
+
+
+.c_heritage .left1:hover{
+    cursor: pointer;
+    width: 52.5%;
+    height: 625px;
+}
+
+.c_heritage .left2{
+    width: 50%;
+    height: 600px;
+    background-image: url(images/forest2.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+}
+
+.c_heritage .left3{
+    width: 50%;
+    height: 600px;
+    background-image: url(images/forest1.avif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+}
+
+.c_heritage .right h2{
+    font-size: 40px;
+    font-weight: 300;
+}
+.c_heritage .right p{
+    margin: 20px 0;
+    font-weight: 500;
+}
+
+.c_heritage .right a{
+    margin: 0 190px;
+    text-decoration:none;
+    text-transform: uppercase;
+    background-color: white;
+    border-radius: 4px;
+    color: black;
+    padding: 20px 20px;
+    display: inline-block;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+.c_heritage .right a:hover{
+    background-color: #000000ce;
+    color: #ffb969;
+}
+
+.her1::after {
+    content: " ";
+    display: block;
+    position: absolute;
+    height: 5px;
+    background: black;
+    width: 40px;
+    left: 100%;
+    top: calc(50% - 2px);
+  }
+
+
+/*                 Natural Heritage                   */
+/*
+.n_heritage{
+    margin-top: 5%;
+}
+.n_heritage .container{
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.n_heritage .right{
+    width: 40%;
+    width: auto;
+    height: 600px;
+    background-image: url(images/forest2.webp) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.n_heritage .left{
+    width: 90%;
+    min-width: 800px;
+    max-height: 400px;
+    background-color: #f9d7af;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    border-radius: 8px;
+    color:#000000;
+    margin-right: -150px;
+}
+.n_heritage .left h2{
+    font-size: 40px;
+    font-weight: 300;
+}
+.n_heritage .left p{
+    margin: 20px 0;
+    font-weight: 500;
+}
+
+.n_heritage .left a{
+    margin: 0 255px;
+    text-decoration:none;
+    text-transform: uppercase;
+    background-color: white;
+    border-radius: 4px;
+    color: black;
+    padding: 20px 20px;
+    display: inline-block;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+.n_heritage .left a:hover{
+    background-color: #000000ce;
+    color: #ffb969;
+}*/
